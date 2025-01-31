@@ -92,7 +92,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## 💡 Contributions
 Feel free to fork this repo, make improvements, and submit a pull request.  
 
-📩 **Have questions?** Contact me at `your-email@example.com`.  
+📩 **Have questions?** Contact me at `najmul.hasan10@gmail.com`.  
 
 ---
 
