@@ -1,4 +1,4 @@
-# 🚀 My Vite React App
+# 🚀 FlickTrends
 
 This is a React project built with [Vite](https://vitejs.dev/) and deployed on **GitHub Pages**.
 
