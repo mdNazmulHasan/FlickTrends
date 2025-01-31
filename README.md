@@ -13,12 +13,12 @@ Follow these steps to set up and run the project locally.
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-github-username/your-repo-name.git
+   git clone https://github.com/mdNazmulHasan/FlickTrends.git
    ```
 
 2. **Navigate to the project folder**  
    ```bash
-   cd your-repo-name
+   cd FlickTrends
    ```
 
 3. **Install dependencies**  
