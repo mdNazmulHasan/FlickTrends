@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useDebounce } from "react-use";
 import Search from "./components/Search";
 import Spinner from "./components/Spinner";
 import MovieCard from "./components/MovieCard";
-import { getTrendingMovies, updateSearchCount } from "./appwrite";
+import { getTrendingMovies, updateSearchCount } from "./appwrite"; // "appwrite" is a custom module for handling app-specific logic
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 
-const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY; // "TMDB" refers to The Movie Database API
 
 const API_OPTIONS = {
   method: "GET",
@@ -46,6 +46,7 @@ function App() {
         await updateSearchCount(query, data.results[0]);
       }
     } catch (error) {
+      console.error(error);
       setErrorMessage("Error fetching movies, please try again later");
     } finally {
       setIsLoading(false);
@@ -73,7 +74,7 @@ function App() {
         <header>
           <img src="./hero.png" alt="Hero Banner" />
           <h1>
-            Find <span className="text-gradient">movies</span> you'll enjoy
+            Find <span className="text-gradient">movies</span> you&apos;ll enjoy
             without hassle
           </h1>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
